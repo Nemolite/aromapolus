@@ -1,0 +1,10 @@
+/*
+Theme Name:     aromapolus
+Theme URI:      https: //aromapolus.ru/
+Description:    Дочерняя тема для темы envo-store 
+Author:         Nemolite (Sergey Vushnyakov)
+Author URI:     https: //vandraren.ru/
+Template:       envo-store
+Version:        1.0.1
+*/
+@import url("../envo-store/style.css");
