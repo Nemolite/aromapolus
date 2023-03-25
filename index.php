@@ -5,23 +5,21 @@
 
     <div class="col-md-<?php envo_store_main_content_width_columns(); ?>">
 
+	<div class="category">
+		<h1 class="site-title h1">Разделы</h1>
 		<?php
-		if ( have_posts() ) :
-
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'content', get_post_format() );
-
-			endwhile;
-
-			the_posts_pagination();
-
-		else :
-
-			get_template_part( 'content', 'none' );
-
-		endif;
+		echo do_shortcode('[product_categories columns="3" parent="0"]');
+	
 		?>
+	</div>
+	<div class="shop">
+		<h1 class="site-title h1">Каталог товаров и услуг</h1>
+	<?php
+		echo do_shortcode('[products limit="6" columns="3" paginate="true"]');	
+	?>
+	
+	</div>
+	
 
 	</div>
 
