@@ -1,0 +1,9 @@
+h1, .h1 {
+    font-size: 30px;
+}
+
+.site-header {
+    padding-top: 85px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
